@@ -1,0 +1,52 @@
+/* Typography */
+/* Hierarquia enxuta: poucos tamanhos, poucos pesos, foco em leitura. */
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-foreground);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-sans);
+  color: var(--color-foreground);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 1.7rem + 2.2vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.5rem + 1vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+}
+
+/* Texto de apoio acima de títulos (eyebrow) */
+.text-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+/* Parágrafo de destaque (subtítulos de seção) */
+.text-lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-muted-foreground);
+}
